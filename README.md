@@ -1,14 +1,15 @@
 # cafe-management-system-csharp
+![Static Badge](https://img.shields.io/badge/Visual%20Studio%202022-purple)
+![Static Badge](https://img.shields.io/badge/SSMS-yellow)
+![Static Badge](https://img.shields.io/badge/CSharp-blue)
+
 cafe shop management system bernama "SOLUNE"
 ## Fitur Utama
 
 -  Login & autentikasi user
 -  Manajemen menu
 -  Manajemen inventaris
--  Sistem POS (Point of Sale)
 -  Riwayat & laporan penjualan
--  Manajemen pengguna
--  Pengaturan sistem
 ## Teknologi yang Digunakan
 
 - C# (.NET / WinForms / WPF)
@@ -19,22 +20,22 @@ cafe shop management system bernama "SOLUNE"
 
 ```
 SOLUNE/
-├── SOLUNE.UI/        # UI (WinForms/WPF)
-├── SOLUNE.Business/  # Business Logic
-├── SOLUNE.Data/      # Data Access (ADO.NET)
-├── SOLUNE.Models/    # Data Models
-└── SQL/              # Database Script
+├── Form1.cs/                # Login Form 
+├── RegisterForm.cs/         # Register Form
+├── CashierMainForm/         # Cashier Dashboard
+├── AdminMainForm/           # Admin Dashboard
+├── CashierOrderForm.cs/     # Cashier Order Form
+├── CashierCustomerForm.cs/  # Cashier Order Form
+├── AdminAddProducts.cs/     # Admin Add Product
+└── AdminAddUsers.cs/        # Admin Add Users
 ```
 ## Struktur Database
 
 ```
 Users
-Menu
-Category
+Products
 Orders
-OrderDetails
-Inventory
-SalesReport
+Customers
 ```
 
 
@@ -44,12 +45,13 @@ SalesReport
 ```
 SOLUNE System
 ├── LoginPage
-├── Dashboard
-│   ├── MenuManagement
-│   ├── InventoryManagement
-│   ├── TransactionPOS
-│   └── SalesReport
-├── Settings
-│   └── UserManagement
+├── Dashboard (Admin)
+│   ├── Add Cashier
+│   ├── Add Products
+│   └── Customers
+├── Dashboard (Cashier)
+│   ├── Add Products
+│   ├── Order
+│   └── Customers
 └── Logout
 ```
