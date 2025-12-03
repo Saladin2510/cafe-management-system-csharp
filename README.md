@@ -40,7 +40,7 @@ Customers
 
 
 
-## Struktur Navigasi SOLUN
+## Struktur Navigasi SOLUNE
 
 ```
 SOLUNE System
